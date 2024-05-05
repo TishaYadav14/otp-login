@@ -1,38 +1,65 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+h1 {
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container {
+  background-color: rgb(9, 4, 37);
+  padding: 20px 30px;
+  width: 30vw;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.phoneInput-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+
+.phoneInput-form input {
   color: white;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 20px;
+  background: transparent;
+  max-width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.phoneInput-form button {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: white;
+  color: rgb(9, 4, 37);
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: all 0.4s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.phoneInput-form button:hover {
+  background-color: rgb(9, 4, 37);
+  color: white;
+  border: solid 2px white;
+}
+
+.otpInput {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 10px;
 }
